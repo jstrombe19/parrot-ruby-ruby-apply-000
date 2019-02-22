@@ -2,14 +2,11 @@
 # returns the phrase
 
 def parrot(argument)
-  begin
-  empty = parrot()
-  if empty 
-    puts = "Squawk!"
-  end
-  rescue
+  if argument.length > 0 
+    puts argument
+    return argument
+  else
+    puts "Squawk!"
     return "Squawk!"
   end
-  puts argument
-  return argument
 end
